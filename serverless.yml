@@ -25,13 +25,13 @@ functions:
           type: dynamodb
           arn: arn:aws:dynamodb:us-west-2:329054710135:table/Ants-Smashing-PlayersScore/stream/2018-02-21T21:40:38.366
 
-  publishTeamScoreEventsHandler:
-    handler: handler.publishTeamScoreEventsHandler
-
-    events:
-      - stream:
-          type: dynamodb
-          arn: arn:aws:dynamodb:us-west-2:329054710135:table/Ants-Smashing-TeamsScore/stream/2018-02-21T21:40:39.849
+#  publishTeamScoreEventsHandler:
+#    handler: handler.publishTeamScoreEventsHandler
+#
+#    events:
+#      - stream:
+#          type: dynamodb
+#          arn: arn:aws:dynamodb:us-west-2:329054710135:table/Ants-Smashing-TeamsScore/stream/2018-02-21T21:40:39.849
 
 plugins:
   - serverless-domain-manager
