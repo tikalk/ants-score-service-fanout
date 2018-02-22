@@ -3,6 +3,7 @@ var faas_grip = require('faas-grip');
 const AWS = require('aws-sdk');
 
 exports.handler = function (event, context, callback) {
+    console.log("Started handler : "+JSON.stringify(event));
     // 2k padding for old browsers
     var padding = new Array(2048);
     var body = ':' + padding.join(' ') + '\n';
