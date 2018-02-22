@@ -4,7 +4,7 @@ provider:
   runtime: nodejs6.10
   region: us-west-2
   environment:
-    GRIP_URL: https://api.fanout.io/realm/c2f47682?iss=c2f47682&key=base64:JciP77y/AekMKyeoLl452A==
+    GRIP_URL: https://api.fanout.io/realm/c2f47682?iss=c2f47682&key=base64:TcX2Zg82zW3RNYt22w+ulQ==
   role: arn:aws:iam::329054710135:role/lambda-kinesis-ants
 
 functions:
