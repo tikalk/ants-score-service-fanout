@@ -30,6 +30,8 @@ exports.publishPlayerScoreEventsHandler = function (event, context, callback) {
     callback(null, "Successfully processed "+eventStr);
 }
 
+
+
 exports.publishTeamScoreEventsHandler = function (event, context, callback) {
     const eventStr = JSON.stringify(event);
     console.log("Got Teams Table Event from stream : "+eventStr);
