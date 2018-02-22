@@ -25,7 +25,7 @@ exports.publishPlayerScoreEventsHandler = function (event, context, callback) {
     const eventStr = JSON.stringify(event);
     console.log("Got Players Table Event from stream : "+eventStr);
     const newImage = event.Records.map(record => record.dynamodb.NewImage);
-    faas_grip.publish('test', new grip.HttpStreamFormat(
+    faas_grip.publish('mychannel', new grip.HttpStreamFormat(
         'event: message\ndata: '+JSON.stringify(newImage)+'\n\n'));
     callback(null, "Successfully processed "+eventStr);
 }
